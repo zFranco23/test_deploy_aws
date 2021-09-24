@@ -11,8 +11,8 @@ const index = () => {
             
             {
             
-                colors.map((color)=>(
-                    <li>
+                colors.map((color,i)=>(
+                    <li key={i}> 
 
                         <Link href={`/colors/${color.id}`} >
                             {color.id}
